@@ -1,4 +1,4 @@
-package _02201
+package _1
 
 func modifyString(s string) string {
 	res := []byte(s)

@@ -1,4 +1,4 @@
-package _02201
+package _1
 
 func construct2DArray(original []int, m int, n int) [][]int {
 	length := len(original)

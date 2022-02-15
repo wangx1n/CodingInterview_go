@@ -1,4 +1,4 @@
-package _02201
+package _1
 
 var week = []string{"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"}
 var monthDays = []int{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30}

@@ -1,4 +1,4 @@
-package _02201
+package _1
 
 import "math/rand"
 import common "CodingInterview/goSrc/leetcode/common"

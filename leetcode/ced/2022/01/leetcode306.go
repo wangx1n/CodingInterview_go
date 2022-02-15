@@ -1,4 +1,4 @@
-package _02201
+package _1
 
 func stringAdd(x, y string) string {
 	res := []byte{}

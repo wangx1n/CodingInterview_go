@@ -1,4 +1,4 @@
-package common
+package String
 
 // stringAdd 字符串相加
 func StringAdd(x, y string) string {

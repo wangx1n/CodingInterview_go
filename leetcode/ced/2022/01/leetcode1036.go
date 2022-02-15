@@ -1,4 +1,4 @@
-package _02201
+package _1
 
 var moveTo = [][]int{{1, 0}, {-1, 0}, {0, 1}, {0, -1}}
 
