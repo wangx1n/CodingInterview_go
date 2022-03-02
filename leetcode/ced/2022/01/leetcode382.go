@@ -1,7 +1,9 @@
 package _1
 
-import "math/rand"
-import common "CodingInterview/goSrc/leetcode/common"
+import (
+	"math/rand"
+	"github.com/wangx1n/Common_go/List"
+)
 
 type Solution struct {
 	head *common.ListNode
