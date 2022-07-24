@@ -2,7 +2,7 @@ package _1
 
 import (
 	"math/rand"
-	"github.com/wangx1n/Common_go/List"
+	common "gitee.com/wangx1n9347/common_go/List"
 )
 
 type Solution struct {
