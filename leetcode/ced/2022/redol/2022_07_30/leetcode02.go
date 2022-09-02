@@ -1,15 +1,14 @@
-package redol
+package _022_07_30
 
-// ListNode Definition for singly-linked list.
 type ListNode struct {
 	Val  int
 	Next *ListNode
 }
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
-	carry := 0
 	var head *ListNode
-	tail := head
+	var tail *ListNode
+	carry := 0
 	for l1 != nil || l2 != nil {
 		n1, n2 := 0, 0
 		if l1 != nil {
@@ -21,23 +20,17 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 			l2 = l2.Next
 		}
 		sum := n1 + n2 + carry
+		carry = sum / 10
 		if head == nil {
-			head = &ListNode{
-				Val: sum % 10,
-			}
+			head = &ListNode{Val: sum % 10}
 			tail = head
 		} else {
-			tail.Next = &ListNode{
-				Val: sum % 10,
-			}
+			tail.Next = &ListNode{Val: sum % 10}
 			tail = tail.Next
 		}
-		carry = sum / 10
 	}
 	if carry > 0 {
-		tail.Next = &ListNode{
-			Val: carry,
-		}
+		tail.Next = &ListNode{Val: carry}
 	}
 	return head
 }
