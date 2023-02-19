@@ -3,7 +3,7 @@
  * @Description:
  * @File:  leetcode16_doublePoint
  * @Version: 1.0.0
- * @Date: 2022/3/6 22:03
+ * @Date: 2022/3/6 22:lc03
  */
 
 package array
@@ -14,7 +14,7 @@ import (
 )
 
 func main() {
-	a := []int{-1,2,1,-4}
+	a := []int{-1, 2, 1, -4}
 	threeSumClosest(a, 1)
 }
 
@@ -31,7 +31,7 @@ func threeSumClosest(nums []int, target int) int {
 			if cur == target {
 				return cur
 			}
-			if Abs(target - cur) < Abs(target - res) {
+			if Abs(target-cur) < Abs(target-res) {
 				res = cur
 			}
 			if cur > target {
